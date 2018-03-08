@@ -1,0 +1,71 @@
+{
+    "src_folders" : ["tests"],
+    "output_folder" : "reports",
+    "custom_commands_path" : "custom_commands",
+    "custom_assertions_path" : "custom_assertions",
+    "page_objects_path" : "page_objects",
+    "globals_path" : "",
+  
+    "selenium" : {
+      "start_process" : false,
+      "server_path" : "./bin/selenium-server-standalone-3.9.0.jar",
+      "log_path" : "./logs",
+      "port" : 4444,
+      "cli_args" : {
+        "webdriver.chrome.driver" : "./drivers/chromedriver",
+        "webdriver.gecko.driver" : "",
+        "webdriver.edge.driver" : ""
+      }
+    },
+  
+    "test_settings" : {
+      "default" : {
+        "selenium_port"  : 4444,
+        "selenium_host"  : "localhost",
+        "launch_url" : "http://clubs.sit1.gb.moneysavingexpert.com/cheapenergyclub/login",
+        "desiredCapabilities": {
+            "browserName": "chrome",
+            "chromeOptions" : {
+              "args" : ["--no-sandbox"]
+            },
+            "acceptSslCerts": true
+          }
+        },
+        "globals" : {
+            "myGlobalVar" : "some value",
+            "otherGlobal" : "some other value"
+          },
+          "integration" : {
+            "launch_url" : "http://staging.host",
+            "globals" : {
+              "myGlobalVar" : "other value"
+            }
+          },
+        "selenium_port"  : 4444,
+        "selenium_host"  : "localhost",
+        "silent": true,
+        "screenshots" : {
+          "enabled" : false,
+          "path" : ""
+        },
+        "desiredCapabilities": {
+          "browserName": "firefox",
+          "marionette": true
+        }
+      },
+  
+      "chrome" : {
+        "desiredCapabilities": {
+          "browserName": "chrome"
+        }
+      },
+  
+      "edge" : {
+        "desiredCapabilities": {
+          "browserName": "MicrosoftEdge"
+        }
+      }
+    }
+  
+
+  
