@@ -5,9 +5,9 @@
 
   <testsuite name="login"
     errors="1" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="1" time="0.003000" timestamp="Wed, 14 Feb 2018 15:28:52 GMT">
+    tests="1" time="0.009000" timestamp="Tue, 13 Mar 2018 11:30:07 GMT">
   
-    <testcase name="Demo test Login" classname="login" time="0.003000" assertions="0">
+    <testcase name="Demo test Login" classname="login" time="0.009000" assertions="0">
     </testcase>
   
 
@@ -15,8 +15,10 @@
     <system-err>
         Error while running [Login / Demo test Login]:
 
-  ReferenceError: assert is not defined
-    at Object.Demo test Login (/Users/tolu.adeleye/Documents/workspace/nightwatch-test/tests/login.js:11:7)
+  Error: getComparisonButton was not found in &#34;account_page&#34;. Available elements: getComparison
+    at getElement (/Users/tolu.adeleye/Documents/workspace/nightwatch-test/node_modules/nightwatch/lib/page-object/command-wrapper.js:13:13)
+    at Page.waitForElementVisible (/Users/tolu.adeleye/Documents/workspace/nightwatch-test/node_modules/nightwatch/lib/page-object/command-wrapper.js:81:32)
+    at Object.Demo test Login (/Users/tolu.adeleye/Documents/workspace/nightwatch-test/tests/login.js:12:8)
     at Module.call (/Users/tolu.adeleye/Documents/workspace/nightwatch-test/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /Users/tolu.adeleye/Documents/workspace/nightwatch-test/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tolu.adeleye/Documents/workspace/nightwatch-test/node_modules/q/q.js:834:54)
@@ -24,8 +26,6 @@
     at Promise.promise.promiseDispatch (/Users/tolu.adeleye/Documents/workspace/nightwatch-test/node_modules/q/q.js:796:13)
     at /Users/tolu.adeleye/Documents/workspace/nightwatch-test/node_modules/q/q.js:556:49
     at runSingle (/Users/tolu.adeleye/Documents/workspace/nightwatch-test/node_modules/q/q.js:137:13)
-    at flush (/Users/tolu.adeleye/Documents/workspace/nightwatch-test/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
     </system-err>
   
 
